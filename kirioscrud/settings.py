@@ -53,8 +53,9 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True 
-
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',  # Agrega aquí el origen de tu frontend
+]
 
 ROOT_URLCONF = 'kirioscrud.urls'
 
